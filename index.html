@@ -4,33 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3XCLUSIVE WOOD WORK</title>
+    <title>Woodworking Business</title>
     <link rel="stylesheet" href="wood.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <div class="hero">
-        <h1>3XCLUSIVE WOOD WORK</h1>
-        <p>Welcome to our exclusive woodworking showroom! Our team of skilled craftsmen will create beautiful pieces that will leave a lasting impression on your home.</p>
-    </div>
-    <div class="service">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Custom woodworking projects</li>
-            <li>Woodworking tutorials</li>
-            <li>Woodworking kits</li>
-            <li>Woodworking accessories</li>
-            <li>Woodworking tools</li>
-            <li>Woodworking gifts</li>
-        </ul>
-        <div class="btn">
-            <a href="contact.html">Contact Us</a>
-            <a href="schedule.html">Schedule a Workshop</a>
-            <a href="order.html">Order Now</a>
-            <a href="faq.html">FAQ</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="testimonials.html">Testimonials</a>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>3XCLUSIVE WOOD WORK LIMITED</h1>
+            <p>Where Craftsmanship Meets Creativity</p>
+            <a href="#services" class="cta-btn">Explore Our Work</a>
+            <a href="#contact" class="cta-btn">Contact Us</a>
         </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Founded in [Year], we specialize in custom woodwork, providing high-quality furniture and decor crafted to perfection.</p>
+            <h3>Our Values</h3>
+            <ul>
+                <li>Quality Craftsmanship</li>
+                <li>Sustainable Materials</li>
+                <li>Customer Satisfaction</li>
+                <li>Attention to Detail</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Custom Furniture</h3>
+                <p>Custom tables, chairs, shelves, and more.</p>
+            </div>
+            <div class="service-item">
+                <h3>Cabinetry</h3>
+                <p>Tailored cabinetry for kitchens, bathrooms, and storage solutions.</p>
+            </div>
+            <div class="service-item">
+                <h3>Wood Accents & Decor</h3>
+                <p>Wall panels, sculptures, and wooden decorative features.</p>
+            </div>
+            <div class="service-item">
+                <h3>Restoration & Repair</h3>
+                <p>Bring new life to your old furniture and wood installations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="portfolio-gallery">
+            <img src="project1.jpg" alt="Project 1">
+            <img src="project2.jpg" alt="Project 2">
+            <img src="project3.jpg" alt="Project 3">
+            <img src="project4.jpg" alt="Project 4">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"The custom table we ordered is perfect, and the craftsmanship is outstanding!" – mr bishop</p>
+        </div>
+        <div class="testimonial">
+            <p>"Excellent service and beautiful cabinetry. We are beyond happy!" – juice </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 3xclusive Wood work limited. All rights reserved.</p>
+        <p><a href="https://www.instagram.com" target="_blank">Instagram</a> | <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+    </footer>
 
 </body>
 
