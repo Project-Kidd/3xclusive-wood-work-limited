@@ -12,4 +12,8 @@
     align-items: center;
     color: rgb(20, 158, 182);
     text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
 }
