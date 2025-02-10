@@ -30,10 +30,21 @@ header nav ul li a {
     font-size: 18px;
 }
 
-h1,
+h1 {
+    color: #c3e1e4;
+}
+
 h2,
 h3 {
     color: #2C3E50;
+}
+
+.li {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    padding-right: 50px;
 }
 
 
