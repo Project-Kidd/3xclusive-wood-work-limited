@@ -156,7 +156,7 @@ footer a:hover {
         text-align: center;
     }
     header nav ul li {
-        display: block;
+        display: inline-block;
         margin: 10px 0;
     }
     .hero {
