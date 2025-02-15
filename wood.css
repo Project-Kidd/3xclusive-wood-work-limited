@@ -39,6 +39,9 @@ h3 {
     color: #2C3E50;
 }
 
+
+/* this is the only tab with one function */
+
 .li {
     list-style: none;
     text-decoration: none;
@@ -81,7 +84,7 @@ section {
 }
 
 section#services .service-list {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     gap: 20px;
 }
@@ -164,6 +167,7 @@ footer a:hover {
     }
     .hero h1 {
         font-size: 36px;
+        display: inline-block;
     }
     .hero p {
         font-size: 20px;
@@ -176,7 +180,7 @@ footer a:hover {
     }
     /* Stack the service list items vertically on smaller screens */
     #services .service-list {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
     #services .service-item {
@@ -207,6 +211,7 @@ footer a:hover {
     }
     .hero h1 {
         font-size: 28px;
+        display: inline-block;
     }
     .hero p {
         font-size: 16px;
@@ -235,6 +240,7 @@ footer a:hover {
 @media screen and (min-width: 1024px) {
     .hero h1 {
         font-size: 60px;
+        display: inline-block;
     }
     .hero p {
         font-size: 26px;
