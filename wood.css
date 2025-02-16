@@ -1,330 +1,343 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* Add mobile-specific navigation styles */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
+/* Header and Navigation Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
 }
 
 #nav-list {
     list-style: none;
-    padding: 0;
-    text-align: center;
+    display: flex;
 }
 
 #nav-list li {
-    display: inline-block;
-    margin-right: 20px;
+    margin: 0 1rem;
 }
 
 #nav-list li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
-/* Mobile Nav Styles */
-@media screen and (max-width: 768px) {
-    #nav-list {
-        display: none;
-        width: 100%;
-        text-align: left;
-        background-color: #1d1d1d;
-        position: absolute;
-        top: 50px;
-        left: 0;
-        padding: 15px;
-    }
-
-    #nav-list li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-        font-size: 30px;
-        color: #fff;
-        padding: 15px;
-        background-color: #333;
-        width: 100%;
-    }
-
-    #nav-list.show {
-        display: block;
-    }
-
-    #nav-list li a {
-        font-size: 16px;
-    }
-}
-.menu-toggle li :hover{
-    color: #ff9800;
+#nav-list li a:hover {
+    color: #f4a261;
 }
 
-
-header {
-    background-color: #333;
-    padding: 20px;
+.menu-toggle {
+    display: none;
+    cursor: pointer;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-h1 {
-    color: #c3e1e4;
-}
-
-h2,
-h3 {
-    color: #2C3E50;
-}
-
-
-/* this is the only tab with one function */
-
-.li {
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-    display: inline;
-    padding-right: 50px;
-}
-
+/* Hero Section */
 #home .hero {
-    background-color: #287b6f;
     text-align: center;
-    padding: 80px 20px;
-    color: white;
-    margin: 0px;
-    l
+    padding: 5rem 1rem;
+    background-color: #2a9d8f;
+    color: #fff;
 }
 
 #home .hero h1 {
-    font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 #home .hero p {
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .cta-btn {
-    background-color: #e67e22;
-    color: white;
-    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    margin: 0.5rem;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px;
+    font-size: 1.1rem;
 }
 
 .cta-btn:hover {
-    background-color: #d35400;
+    background-color: #e76f51;
 }
 
-section {
-    padding: 40px 20px;
+/* About Section */
+#about {
+    padding: 3rem 2rem;
+    background-color: #fff;
     text-align: center;
 }
 
-section#services .service-list {
-    display: inline-flex;
-    justify-content: space-around;
-    gap: 20px;
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-section#services .service-item {
-    background-color: #ecf0f1;
-    padding: 20px;
-    width: 22%;
-    border-radius: 5px;
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 
-section#portfolio .portfolio-gallery {
+#about .li p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+/* Services Section */
+#services {
+    padding: 3rem 2rem;
+    background-color: #f1f1f1;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.service-list {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-section#portfolio .portfolio-gallery img {
-    width: 40%;
-    border-radius: 5px;
+.service-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 22%;
+    text-align: center;
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-gallery img {
+    width: 22%;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 3rem 2rem;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.testimonial {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* Contact Section */
+#contact {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
 form input,
 form textarea {
     width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
-    background-color: #2980B9;
-    color: white;
-    padding: 10px 20px;
+    background-color: #f4a261;
+    color: #fff;
+    padding: 1rem 3rem;
     border: none;
     border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 form button:hover {
-    background-color: #3498db;
+    background-color: #e76f51;
 }
 
+/* Footer */
 footer {
+    padding: 2rem;
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 20px 0;
 }
 
 footer a {
-    color: #e67e22;
+    color: #fff;
     text-decoration: none;
+    margin: 0 1rem;
 }
 
 footer a:hover {
-    color: #f39c12;
+    color: #f4a261;
 }
 
-
-/* Media Queries for Responsiveness */
-
-
-/* For devices with a maximum width of 768px (tablets, mobile landscape) */
-
+/* Media Queries */
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
+    /* Navigation for Mobile View */
+    .menu-toggle {
+        display: block;
     }
-    header nav ul {
+
+    #nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    #nav-list li {
+        margin: 1rem 0;
         text-align: center;
     }
-    header nav ul li {
-        display: inline-block;
-        margin: 10px 0;
+
+    #nav-list li a {
+        font-size: 1.5rem;
     }
-    .hero {
-        padding: 40px 20px;
+
+    /* Mobile Portfolio */
+    .portfolio-gallery {
+        flex-direction: column;
     }
-    .hero h1 {
-        font-size: 36px;
-        display: inline-block;
-    }
-    .hero p {
-        font-size: 20px;
-    }
-    .cta-btn {
-        font-size: 16px;
-    }
-    section {
-        padding: 20px;
-    }
-    /* Stack the service list items vertically on smaller screens */
-    #services .service-list {
-        flex-direction: row;
-        gap: 10px;
-    }
-    #services .service-item {
-        width: 100%;
-    }
-    /* Adjust portfolio images to be smaller on mobile */
-    #portfolio .portfolio-gallery img {
+
+    .portfolio-gallery img {
         width: 80%;
+        margin: 1rem auto;
     }
+
+    /* Service Items on Mobile */
+    .service-list {
+        flex-direction: column;
+    }
+
+    .service-item {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+    /* Contact Form */
     form input,
     form textarea {
         width: 90%;
     }
 }
 
-
-/* For devices with a maximum width of 480px (mobile portrait) */
-
 @media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
+    /* Smaller Text for Mobile */
+    #home .hero h1 {
+        font-size: 2rem;
     }
-    header nav ul li a {
-        font-size: 16px;
+
+    #home .hero p {
+        font-size: 1.2rem;
     }
-    .hero {
-        padding: 20px 10px;
+
+    #services h2,
+    #portfolio h2,
+    #testimonials h2 {
+        font-size: 2rem;
     }
-    .hero h1 {
-        font-size: 28px;
-        display: inline-block;
-    }
-    .hero p {
-        font-size: 16px;
-    }
+
     .cta-btn {
-        font-size: 14px;
-        padding: 8px 15px;
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
     }
-    section {
-        padding: 15px;
+
+    .service-item h3 {
+        font-size: 1.5rem;
     }
-    /* Make portfolio images even smaller */
-    #portfolio .portfolio-gallery img {
-        width: 100%;
-    }
-    /* Adjust the form elements */
-    form input,
-    form textarea {
-        width: 95%;
+
+    .testimonial p {
+        font-size: 1rem;
     }
 }
-
-
-/* For devices with a minimum width of 1024px (larger screens) */
-
-@media screen and (min-width: 1024px) {
-    .hero h1 {
-        font-size: 60px;
-        display: inline-block;
-    }
-    .hero p {
-        font-size: 26px;
-    }
-    #services .service-list {
-        display: flex;
-        justify-content: space-between;
-    }
-    #services .service-item {
-        width: 22%;
-    }
-    .cta-btn {
-        font-size: 18px;
-    }
-    #portfolio .portfolio-gallery img {
-        width: 30%;
-    }
-    form input,
-    form textarea {
-        width: 70%;
-    }
+/* For mobile view, initially hide the menu */
+#nav-list {
+    display: none;
 }
 
+/* When the menu is active, show it */
+#nav-list.active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}

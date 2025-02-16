@@ -21,16 +21,17 @@ function onLoadCallback() {
         });
     });
 }
-// Mobile Navigation Toggle
+// Get the DOM elements
 const mobileMenu = document.getElementById('mobile-menu');
 const navList = document.getElementById('nav-list');
 
-mobileMenu.addEventListener('click', function () {
-    navList.classList.toggle('show');
+// Add an event listener to toggle the mobile menu
+mobileMenu.addEventListener('click', () => {
+    // Toggle the class to show or hide the menu
+    navList.classList.toggle('active');
 });
-mobileMenu.addEventListener('click', function () {
-    navList.classList.toggle('hide');
-});
+
+
 
 // Form Submission with Validation
 document.getElementById('contact-form').addEventListener('submit', function (event) {
