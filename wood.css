@@ -1,5 +1,4 @@
 /* General Styles */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +6,69 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+
+/* Add mobile-specific navigation styles */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+#nav-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#nav-list li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Mobile Nav Styles */
+@media screen and (max-width: 768px) {
+    #nav-list {
+        display: none;
+        width: 100%;
+        text-align: left;
+        background-color: #1d1d1d;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 15px;
+    }
+
+    #nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+        padding: 15px;
+        background-color: #333;
+        width: 100%;
+    }
+
+    #nav-list.show {
+        display: block;
+    }
+
+    #nav-list li a {
+        font-size: 16px;
+    }
+}
+.menu-toggle li :hover{
+    color: #ff9800;
+}
+
 
 header {
     background-color: #333;
@@ -55,6 +117,8 @@ h3 {
     text-align: center;
     padding: 80px 20px;
     color: white;
+    margin: 0px;
+    l
 }
 
 #home .hero h1 {
@@ -263,3 +327,4 @@ footer a:hover {
         width: 70%;
     }
 }
+
