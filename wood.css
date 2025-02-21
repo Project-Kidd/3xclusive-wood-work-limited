@@ -1,4 +1,5 @@
 /* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,9 @@ body {
     color: #333;
 }
 
+
 /* Header and Navigation Styles */
+
 header {
     background: #333;
     color: #fff;
@@ -51,7 +54,9 @@ nav {
     cursor: pointer;
 }
 
+
 /* Hero Section */
+
 #home .hero {
     text-align: center;
     padding: 5rem 1rem;
@@ -83,7 +88,9 @@ nav {
     background-color: #e76f51;
 }
 
+
 /* About Section */
+
 #about {
     padding: 3rem 2rem;
     background-color: #fff;
@@ -96,6 +103,7 @@ nav {
 }
 
 #about p {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
@@ -105,7 +113,9 @@ nav {
     margin: 0.5rem 0;
 }
 
+
 /* Services Section */
+
 #services {
     padding: 3rem 2rem;
     background-color: #f1f1f1;
@@ -143,7 +153,9 @@ nav {
     margin-bottom: 0.8rem;
 }
 
+
 /* Portfolio Section */
+
 #portfolio {
     padding: 3rem 2rem;
     background-color: #fff;
@@ -168,7 +180,9 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 /* Testimonials Section */
+
 #testimonials {
     padding: 3rem 2rem;
     background-color: #f1f1f1;
@@ -184,7 +198,9 @@ nav {
     font-style: italic;
 }
 
+
 /* Contact Section */
+
 #contact {
     padding: 3rem 2rem;
     background-color: #fff;
@@ -230,7 +246,9 @@ form button:hover {
     background-color: #e76f51;
 }
 
+
 /* Footer */
+
 footer {
     padding: 2rem;
     background-color: #333;
@@ -248,49 +266,43 @@ footer a:hover {
     color: #f4a261;
 }
 
+
 /* Media Queries */
+
 @media screen and (max-width: 768px) {
     /* Navigation for Mobile View */
     .menu-toggle {
         display: block;
     }
-
     #nav-list {
         display: none;
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;
     }
-
     #nav-list li {
         margin: 1rem 0;
         text-align: center;
     }
-
     #nav-list li a {
         font-size: 1.5rem;
     }
-
     /* Mobile Portfolio */
     .portfolio-gallery {
         flex-direction: column;
     }
-
     .portfolio-gallery img {
         width: 80%;
         margin: 1rem auto;
     }
-
     /* Service Items on Mobile */
     .service-list {
         flex-direction: column;
     }
-
     .service-item {
         width: 80%;
         margin: 1rem auto;
     }
-
     /* Contact Form */
     form input,
     form textarea {
@@ -303,41 +315,39 @@ footer a:hover {
     #home .hero h1 {
         font-size: 2rem;
     }
-
     #home .hero p {
         font-size: 1.2rem;
     }
-
     #services h2,
     #portfolio h2,
     #testimonials h2 {
         font-size: 2rem;
     }
-
     .cta-btn {
         font-size: 1rem;
         padding: 0.8rem 1.5rem;
     }
-
     .service-item h3 {
         font-size: 1.5rem;
     }
-
     .testimonial p {
         font-size: 1rem;
     }
 }
+
+
 /* For mobile view, initially hide the menu */
+
 #nav-list {
     display: none;
 }
 
+
 /* When the menu is active, show it */
+
 #nav-list.active {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
-
 }
